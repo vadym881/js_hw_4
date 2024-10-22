@@ -32,13 +32,13 @@ findPerfectNumber();
 function christmasTree(height) {
   height = Number(prompt("Введіть висоту вершини ялинки"));
   for (let currentLevel = 1; currentLevel <= height; currentLevel++) {
-    let spaces = '';
-    let stars = '';
+    let spaces = "";
+    let stars = "";
     for (let spaceCount = 0; spaceCount <= height - currentLevel; spaceCount++) {
-      spaces += ' ';
+      spaces += " ";
     }
     for (let starCount = 0; starCount < 2 * currentLevel - 1; starCount++) {
-      stars += '*';
+      stars += "*";
     }
     console.log(spaces + stars)
   }
